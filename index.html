@@ -1,0 +1,145 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta property="og:image" content="Telegram_2019_Logo.svg.png"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telegram: Contact @video9m</title>
+    <style>
+        /* General body styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: vh;
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        /* Title styling */
+        h1 {
+            font-size: 24px;
+            margin-top: 20px;
+            color: #333;
+        }
+
+        /* Button styling */
+        button {
+            border-radius: 12px;
+            font-weight: bold;
+            width: 200px;
+            height: 60px;
+            border: none;
+            margin-top: 40px;
+            background-color: #1abae7;
+            font-size: 18px;
+            color: #ffffff;
+            box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #1494c4;
+            transform: scale(1.05);
+        }
+
+        /* Image styling */
+        img {
+            width: 80%;
+            max-width: 400px;
+            border-radius: 10px;
+            margin-top: 30px;
+            transition: all 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Responsive syles */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 20px;
+            }
+
+            button {
+                width: 170px;
+                height: 50px;
+                font-size: 16px;
+            }
+
+            img {
+                width: 90%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 18px;
+                margin-top: 15px;
+            }
+
+            button {
+                width: 150px;
+                height: 45px;
+                font-size: 14px;
+            }
+
+            img {
+                width: 95%;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>সম্পুূর্ণ ভিডিও দেখতে ভিডিওতে অথবা প্লে বাটনে চাপুন। Click "Play Now" To Play Video</h1>
+    <h3> {Telegram Channel জয়েন করুন} </h3>
+    <img id="img" src="Telegram_2019_Logo.svg.png" alt="Image">
+
+    <button id="button">Play Now</button>
+
+    <script>
+        // Main content link (new tab)
+        let blogsSite = ' https://t.me/video9m  '; 
+
+        // Direct link (redirect after time)
+        let directlink = 'https://www.profitableratecpm.com/wfek9eih?key=5742576c243544d0feccbcda15c0fe11';
+
+        // Time to wait before redirecting (in seconds)
+        let setTime = 1;
+        let time = setTime * 1000;
+
+        // Button click event
+        document.getElementById('button').onclick = function() {
+            window.open(blogsSite, '_blank');
+            setTimeout(() => {
+                window.location = directlink;
+            }, time);
+        };
+
+        // Image click event
+        document.getElementById('img').onclick = function() {
+            window.open(blogsSite, '_blank');
+            setTimeout(() => {
+                window.location = directlink;
+            }, time);
+        };
+
+        // Prevent going back to the previous page
+        history.pushState(null, null, window.location.href);
+        window.addEventListener('popstate', function() {
+            window.location = directlink;
+        });
+    </script>
+</body>
+</html>
